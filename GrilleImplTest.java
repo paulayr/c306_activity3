@@ -5,13 +5,17 @@
  */
 package grille;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
  *
- * @author Ayrakou
+ * @author Ayrakou, Kouata Sekou
  */
 public class GrilleImplTest {
 
@@ -19,6 +23,22 @@ public class GrilleImplTest {
      * constructeur de la classe.
      */
     public GrilleImplTest() {
+    }
+
+    @BeforeClass
+    public static void setUpClass() throws Exception {
+    }
+
+    @AfterClass
+    public static void tearDownClass() throws Exception {
+    }
+
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
     }
 
     /**
@@ -353,6 +373,79 @@ public class GrilleImplTest {
         System.out.println("main");
         String[] args = null;
         GrilleImpl.main(args);
+    }
+
+    /**
+     * Test of getDimension method, of class GrilleImpl.
+     */
+    @Test
+    public void testGetDimension() {
+        System.out.println("getDimension");
+        GrilleImpl instance = new GrilleImpl();
+        int expResult = 0;
+        int result = instance.getDimension();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setValue method, of class GrilleImpl.
+     */
+    @Test
+    public void testSetValue() {
+        System.out.println("setValue");
+        int x = 0;
+        int y = 0;
+        char value = ' ';
+        GrilleImpl instance = new GrilleImpl();
+        instance.setValue(x, y, value);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getValue method, of class GrilleImpl.
+     */
+    @Test
+    public void testGetValue() {
+        System.out.println("getValue");
+        int x = 0;
+        int y = 0;
+        GrilleImpl instance = new GrilleImpl();
+        char expResult = ' ';
+        char result = instance.getValue(x, y);
+        assertEquals(expResult, result);
+
+    }
+
+    /**
+     * Test of complete method, of class GrilleImpl.
+     */
+    @Test
+    public void testComplete() {
+        System.out.println("complete");
+        GrilleImpl instance = new GrilleImpl();
+        boolean expResult = false;
+        boolean result = instance.complete();
+        assertEquals(expResult, result);
+
+    }
+
+    /**
+     * Test of possible method, of class GrilleImpl.
+     */
+    @Test
+    public void testPossible() {
+        System.out.println("possible");
+        int x = 0;
+        int y = 0;
+        char value = ' ';
+        GrilleImpl instance = new GrilleImpl();
+        boolean expResult = false;
+        boolean result = instance.possible(x, y, value);
+        assertEquals(expResult, result);
+
     }
 
 }
