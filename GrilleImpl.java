@@ -6,7 +6,7 @@
 package grille;
 
 /**
- * @author Ayrakou
+ * @author Ayrakou,  Kouata Sekou
  */
 
 import java.io.BufferedReader;
@@ -351,7 +351,7 @@ public class GrilleImpl implements grille.Grille{
 
     @Override
     public boolean complete() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

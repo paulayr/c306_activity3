@@ -1,6 +1,6 @@
 /**
  *
- * @author Ayrakou
+ * @author Ayrakou, Kouata Sekou
  */
 package grille;
 /**
